@@ -10,16 +10,17 @@ import UIKit
 
 class ProductsTableViewController: UITableViewController {
     
-    private var products: [Product]? = nil
+    private var products: [Product]?
     private let cellIdentifier = "productCellID"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        products = [Product(name: "A", imageName: ""),
-                    Product(name: "B", imageName: ""),
-                    Product(name: "C", imageName: "")]
-        tableView.reloadData()
+        products = [Product(name: "A", imageName: "A"),
+                    Product(name: "B", imageName: "B"),
+                    Product(name: "C", imageName: "C"),
+                    Product(name: "D", imageName: "D"),
+                    Product(name: "E", imageName: "E")]
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
@@ -48,7 +49,7 @@ extension ProductsTableViewController {
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

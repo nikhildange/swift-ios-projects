@@ -14,7 +14,7 @@ class ContactViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        view.addSubview(scrollView)
+        view.addSubview(scrollView)
     }
     
     // Called to notify the viewcontroller that its view have just laid out its subviews
